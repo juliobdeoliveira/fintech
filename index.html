@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="header d-flex justify-content-between align-items-center bg-dark text-white p-2">
+            <div class="header-icons d-flex">
+                <i class="fa fa-calendar mr-3" title="Alterar período"></i>
+                <i class="fa fa-filter" title="Filtrar"></i>
+            </div>
+            <span>Transações</span>
+            <div class="header-icons d-flex">
+                <i class="fa fa-camera mr-3" title="Snapshot"></i>
+                <i class="fa fa-cog" title="Configurações"></i>
+            </div>
+        </div>
+
+        <div class="table-container p-3">
+            <span class="text-white">Junho - Hoje - Todas</span>
+            <table class="table table-dark table-hover table-bordered table-striped mt-2">
+                <thead class="table-secondary">
+                    <tr>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Conta</th>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="expense">
+                        <td>Luz</td>
+                        <td>Casa</td>
+                        <td>Itaú</td>
+                        <td>Lar</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr class="expense">
+                        <td>Água</td>
+                        <td>Casa</td>
+                        <td>Itaú</td>
+                        <td>Lar</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                    <tr class="income">
+                        <td>Venda Bolo</td>
+                        <td>Venda</td>
+                        <td>Itaú</td>
+                        <td>Loja</td>
+                        <td>R$ 20,00</td>
+                    </tr>
+                    <tr class="income">
+                        <td>Serviço Festa</td>
+                        <td>Venda</td>
+                        <td>Itaú</td>
+                        <td>Loja</td>
+                        <td>R$ 200,00</td>   
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="footer">
+            <div class="summary d-flex justify-content-between p-2 bg-dark text-white">
+                <span class="income">R$ 220,00 Receitas</span>
+                <span class="expense">R$ -150,00 Despesas</span>
+                <span class="income">R$ 70,00 Saldo</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center bg-dark text-white p-2">
+                <div class="footer-icons d-flex">
+                    <i class="fa fa-home mr-3" title="Home"></i>
+                    <i class="fa fa-exchange-alt mr-3" title="Transações"></i>
+                    <i class="fa fa-university" title="Bancos"></i>
+                </div>
+                <i class="fa fa-2x fa-plus" title="Adicionar Transação"></i>
+                <div class="footer-icons d-flex">
+                    <i class="fa fa-list mr-3" title="Investimentos"></i>
+                    <i class="fa fa-dollar-sign" title="Empréstimos"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
